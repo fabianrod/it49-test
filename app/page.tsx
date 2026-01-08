@@ -10,7 +10,7 @@ export default function Home() {
       <Header />
       
       {/* Sección Principal: Hero y Módulos Laterales */}
-      <section className="mt-20 max-w-7xl mx-auto px-6 py-8">
+      <section className="mt-32 max-w-7xl mx-auto px-6 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <HeroSection />
           <QuoteModules />
