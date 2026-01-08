@@ -29,7 +29,7 @@ export default function HeroSection() {
             <h1 id="hero-heading" className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
               Property Management in Los Angeles
             </h1>
-            <p className="text-white text-base sm:text-lg md:text-xl mb-6 sm:mb-8">
+            <p className="text-white text-sm sm:text-lg md:text-xl mb-6 sm:mb-8">
               We provide leasing and property management services in Los Angeles,
               Long Beach, Orange County, and throughout Southern California
             </p>
