@@ -1,36 +1,34 @@
-import Header from '@/components/Header'
-import HeroSection from '@/components/HeroSection'
-import QuoteModules from '@/components/QuoteModules'
-import OfficesSection from '@/components/OfficesSection'
-import FindRentals from '@/components/FindRentals'
+import Header from '@/components/layout/Header/Header'
+import HeroSection from '@/components/sections/HeroSection'
+import QuoteModules from '@/components/sections/QuoteModules'
+import Footer from '@/components/layout/Footer'
 
 export default function Home() {
   return (
-    <main className="bg-white">
-      <Header />
-      
+    <>
+      <a
+        href="#main-content"
+        className="sr-only skip-to-main"
+        aria-label="Skip to main content"
+      >
+        Skip to main content
+      </a>
+      <main id="main-content" className="bg-white" role="main" aria-label="Main content">
+        <Header />
       {/* Sección Principal: Hero y Módulos Laterales */}
-      <section className="mt-32 max-w-[1400px] mx-auto px-6 py-8">
+      <section 
+        className="mt-32 max-w-[1400px] mx-auto px-6 py-8"
+        role="region"
+        aria-label="Main content section"
+      >
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:items-stretch">
           <HeroSection />
           <QuoteModules />
         </div>
       </section>
 
-      {/* Sección Inferior: Offices y Find Rentals */}
-      <section className="max-w-[1400px] mx-auto px-6 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <OfficesSection />
-          <FindRentals />
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-100 mt-12 py-8">
-        <div className="max-w-[1400px] mx-auto px-6 text-center">
-          <p className="text-gray-600 text-sm">© 2024 Mashcole Property Management, Inc. All rights reserved.</p>
-        </div>
-      </footer>
-    </main>
+        <Footer />
+      </main>
+    </>
   )
 }

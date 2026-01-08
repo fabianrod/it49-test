@@ -10,3 +10,17 @@ html, body {
 * {
   font-family: 'Inter', sans-serif;
 }
+
+/* Accessibility: Skip to main content link */
+.skip-to-main:focus {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  background-color: #114177;
+  color: white;
+  border-radius: 0.5rem;
+  outline: 2px solid #0e76c0;
+  outline-offset: 2px;
+}
