@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mashcole Property Management, Inc.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Colores personalizados basados en el diseño */
+        .blue-dark {
+            background-color: #1e3a5f;
+        }
+        .blue-dark-text {
+            color: #1e3a5f;
+        }
+        .blue-light {
+            background-color: #2d5a8a;
+        }
+        .yellow-btn {
+            background-color: #ffd700;
+        }
+        .border-blue-dark {
+            border-color: #1e3a5f;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 blue-dark rounded flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">F</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="blue-dark-text font-bold text-sm leading-tight">MASHCOLE PROPERTY</span>
+                        <span class="blue-dark-text text-xs leading-tight">MANAGEMENT, INC.</span>
+                    </div>
+                </div>
+
+                <!-- Navegación Principal -->
+                <nav class="hidden lg:flex items-center space-x-6">
+                    <div class="relative group">
+                        <a href="#" class="blue-dark-text hover:text-blue-600 font-medium text-sm flex items-center">
+                            Property Management
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <!-- Menú Desplegable -->
+                        <div class="absolute top-full left-0 mt-2 w-64 blue-dark rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <div class="py-2">
+                                <a href="#" class="block px-4 py-2 text-white blue-light hover:bg-blue-600 rounded mx-2 my-1">The Mashcole Method</a>
+                                <a href="#" class="block px-4 py-2 text-white hover:bg-blue-600 rounded mx-2 my-1">Asset Operation</a>
+                                <a href="#" class="block px-4 py-2 text-white hover:bg-blue-600 rounded mx-2 my-1">Account Operations</a>
+                                <a href="#" class="block px-4 py-2 text-white hover:bg-blue-600 rounded mx-2 my-1">Due Diligence</a>
+                                <a href="#" class="block px-4 py-2 text-white hover:bg-blue-600 rounded mx-2 my-1">Newsletters</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="blue-dark-text hover:text-blue-600 font-medium text-sm">For Rent</a>
+                    <a href="#" class="blue-dark-text hover:text-blue-600 font-medium text-sm">Residents</a>
+                    <a href="#" class="blue-dark-text hover:text-blue-600 font-medium text-sm">Owners</a>
+                    <a href="#" class="blue-dark-text hover:text-blue-600 font-medium text-sm">Testimonials</a>
+                    <a href="#" class="blue-dark-text hover:text-blue-600 font-medium text-sm">About Us</a>
+                    <a href="#" class="blue-dark-text hover:text-blue-600 font-medium text-sm">Blog</a>
+                    <a href="#" class="blue-dark-text hover:text-blue-600 font-medium text-sm">Contact Us</a>
+                </nav>
+
+                <!-- Utilidades -->
+                <div class="flex items-center space-x-3">
+                    <button class="yellow-btn text-black font-semibold px-4 py-2 rounded-lg text-sm hover:opacity-90">
+                        PAY ONLINE
+                    </button>
+                    <button class="bg-white border-2 border-blue-dark blue-dark-text font-semibold px-4 py-2 rounded-lg text-sm hover:bg-gray-50">
+                        EMPLOYEES
+                    </button>
+                    <button class="blue-dark text-white font-semibold px-4 py-2 rounded-lg text-sm hover:opacity-90">
+                        (818) 888-8052
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Principal: Hero y Módulos Laterales -->
+    <section class="mt-20 max-w-7xl mx-auto px-6 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- Columna Izquierda: Hero Section -->
+            <div class="lg:col-span-2 relative rounded-2xl overflow-hidden">
+                <!-- Imagen de fondo con overlay -->
+                <div class="relative h-[600px] bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700">
+                    <div class="absolute inset-0 bg-black opacity-40"></div>
+                    <img src="https://via.placeholder.com/800x600/1e3a5f/ffffff?text=Property+Buildings" 
+                         alt="Property Buildings" 
+                         class="w-full h-full object-cover opacity-50">
+                    
+                    <!-- Contenido del Hero -->
+                    <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-8 z-10">
+                        <p class="text-white text-sm uppercase tracking-wider mb-4">SERVICE, INTEGRITY, & PROFITABILITY</p>
+                        <h1 class="text-white text-4xl md:text-5xl font-bold mb-6">Property Management in Los Angeles</h1>
+                        <p class="text-white text-lg mb-8 max-w-2xl">
+                            We provide leasing and property management services in Los Angeles, Long Beach, Orange County, and throughout Southern California
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button class="blue-dark text-white font-semibold px-8 py-3 rounded-lg hover:opacity-90 transition">
+                                CONTACT US
+                            </button>
+                            <button class="bg-white blue-dark-text font-semibold px-8 py-3 rounded-lg border-2 border-blue-dark hover:bg-gray-50 transition">
+                                OUR SERVICES
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Módulos Apilados -->
+            <div class="space-y-6">
+                <!-- Módulo Superior: Request A Property Management Quote -->
+                <div class="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 rounded-2xl p-8 text-white">
+                    <h2 class="text-2xl font-bold mb-4">Request A Property Management Quote</h2>
+                    <p class="text-white mb-6 opacity-90">
+                        Mashcole Property Management, Inc. enables property owners to increase the value and profitability of their assets.
+                    </p>
+                    <button class="blue-dark text-white font-semibold px-6 py-3 rounded-lg w-full hover:opacity-90 transition">
+                        REQUEST A TOUR
+                    </button>
+                </div>
+
+                <!-- Módulo Inferior: Free Market Analysis -->
+                <div class="bg-gray-900 rounded-2xl p-8 text-white">
+                    <h2 class="text-2xl font-bold mb-4">Free Market Analysis</h2>
+                    <p class="text-white mb-6 opacity-90">
+                        Let our experts analyze and provide insights into your current property management agreement for free.
+                    </p>
+                    <button class="blue-dark text-white font-semibold px-6 py-3 rounded-lg w-full hover:opacity-90 transition">
+                        REQUEST A TOUR
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Inferior: Offices y Find Rentals -->
+    <section class="max-w-7xl mx-auto px-6 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- Columna Izquierda: Offices In California -->
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="blue-dark-text text-3xl font-bold mb-6">Offices In California</h2>
+                
+                <div class="space-y-4 mb-8">
+                    <!-- Dirección 1 -->
+                    <div class="flex items-start space-x-3">
+                        <svg class="w-6 h-6 blue-dark-text flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <p class="blue-dark-text">26901 Agoura Road, Suite 250, Calabasas, CA 91301</p>
+                    </div>
+                    
+                    <!-- Dirección 2 -->
+                    <div class="flex items-start space-x-3">
+                        <svg class="w-6 h-6 blue-dark-text flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <p class="blue-dark-text">3846 E Anaheim St, Long Beach, CA 90804</p>
+                    </div>
+                    
+                    <!-- Teléfono -->
+                    <div class="flex items-center space-x-3">
+                        <svg class="w-6 h-6 blue-dark-text flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        <p class="blue-dark-text font-semibold">(818) 888-8052</p>
+                    </div>
+                </div>
+
+                <!-- Ilustración -->
+                <div class="mt-8 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
+                    <img src="https://via.placeholder.com/500x150/e5e7eb/6b7280?text=City+Illustration" 
+                         alt="City Illustration" 
+                         class="w-full h-full object-cover rounded-lg opacity-60">
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Find Rentals -->
+            <div class="bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800 rounded-2xl p-8 text-white relative overflow-hidden">
+                <h2 class="text-3xl font-bold mb-4">Find Rentals</h2>
+                <p class="text-white mb-8 opacity-90">
+                    With more than 7000 units available in the Greater Los Angeles area, we can help you find the right one for you.
+                </p>
+                
+                <!-- Imágenes de propiedades -->
+                <div class="flex -space-x-4 mb-8">
+                    <div class="w-32 h-32 rounded-lg overflow-hidden border-4 border-white shadow-lg">
+                        <img src="https://via.placeholder.com/200x200/4a5568/ffffff?text=Property+1" 
+                             alt="Property 1" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-32 h-32 rounded-lg overflow-hidden border-4 border-white shadow-lg z-10">
+                        <img src="https://via.placeholder.com/200x200/4a5568/ffffff?text=Property+2" 
+                             alt="Property 2" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-32 h-32 rounded-lg overflow-hidden border-4 border-white shadow-lg z-20">
+                        <img src="https://via.placeholder.com/200x200/4a5568/ffffff?text=Property+3" 
+                             alt="Property 3" 
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+                
+                <button class="blue-dark text-white font-semibold px-6 py-3 rounded-lg w-full hover:opacity-90 transition">
+                    SEE ALL RENTAL LISTINGS
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 mt-12 py-8">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-gray-600 text-sm">© 2024 Mashcole Property Management, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
