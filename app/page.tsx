@@ -10,15 +10,15 @@ export default function Home() {
       <Header />
       
       {/* Sección Principal: Hero y Módulos Laterales */}
-      <section className="mt-32 max-w-7xl mx-auto px-6 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <section className="mt-32 max-w-[1400px] mx-auto px-6 py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:items-stretch">
           <HeroSection />
           <QuoteModules />
         </div>
       </section>
 
       {/* Sección Inferior: Offices y Find Rentals */}
-      <section className="max-w-7xl mx-auto px-6 py-8">
+      <section className="max-w-[1400px] mx-auto px-6 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <OfficesSection />
           <FindRentals />
@@ -27,7 +27,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="bg-gray-100 mt-12 py-8">
-        <div className="max-w-7xl mx-auto px-6 text-center">
+        <div className="max-w-[1400px] mx-auto px-6 text-center">
           <p className="text-gray-600 text-sm">© 2024 Mashcole Property Management, Inc. All rights reserved.</p>
         </div>
       </footer>

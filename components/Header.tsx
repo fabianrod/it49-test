@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     <header className="bg-white fixed w-full top-0 z-50">
-      <div className="max-w-7xl mx-auto px-6 pt-3 pb-2">
+      <div className="max-w-[1400px] mx-auto px-6 pt-3 pb-2">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
