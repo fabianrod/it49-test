@@ -2,6 +2,8 @@ interface IconProps {
   name: 'location' | 'phone' | 'email' | 'chevron-down' | 'menu' | 'close'
   className?: string
   size?: number
+  'aria-label'?: string
+  'aria-hidden'?: boolean
 }
 
 const iconPaths = {
@@ -63,7 +65,7 @@ const iconPaths = {
   ),
 }
 
-export default function Icon({ name, className = '', size = 24 }: IconProps) {
+export default function Icon({ name, className = '', size = 24, 'aria-label': ariaLabel, 'aria-hidden': ariaHidden = true }: IconProps) {
   return (
     <svg
       className={className}
@@ -72,7 +74,8 @@ export default function Icon({ name, className = '', size = 24 }: IconProps) {
       fill="none"
       stroke="currentColor"
       viewBox="0 0 24 24"
-      aria-hidden="true"
+      aria-label={ariaLabel}
+      aria-hidden={ariaHidden}
     >
       {iconPaths[name]}
     </svg>

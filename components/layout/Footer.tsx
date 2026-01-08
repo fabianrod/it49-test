@@ -40,7 +40,7 @@ export default function Footer() {
               <address className="space-y-4 not-italic">
                 {CONTACT_INFO.offices.map((office, index) => (
                   <div key={index} className="flex items-start space-x-3">
-                    <Icon name="location" className="text-white flex-shrink-0 mt-1" size={20} aria-hidden="true" />
+                    <Icon name="location" className="text-white flex-shrink-0 mt-1" size={20} aria-hidden={true} />
                     <p className="text-white text-sm font-light">{office.address}</p>
                   </div>
                 ))}
@@ -50,7 +50,7 @@ export default function Footer() {
                   className="flex items-center space-x-3 text-white underline hover:opacity-80 font-light"
                   aria-label={`Call phone number ${CONTACT_INFO.phone}`}
                 >
-                  <Icon name="phone" className="flex-shrink-0" size={20} aria-hidden="true" />
+                  <Icon name="phone" className="flex-shrink-0" size={20} aria-hidden={true} />
                   <span>{CONTACT_INFO.phone}</span>
                 </a>
                 
@@ -59,7 +59,7 @@ export default function Footer() {
                   className="flex items-center space-x-3 text-white underline hover:opacity-80 font-light"
                   aria-label={`Send email to ${CONTACT_INFO.email}`}
                 >
-                  <Icon name="email" className="flex-shrink-0" size={20} aria-hidden="true" />
+                  <Icon name="email" className="flex-shrink-0" size={20} aria-hidden={true} />
                   <span>{CONTACT_INFO.email}</span>
                 </a>
               </address>
@@ -94,7 +94,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <SocialIcon name={social.icon} className="flex-shrink-0 text-[#556d8a]" size={20} aria-hidden="true" />
+                    <SocialIcon name={social.icon} className="flex-shrink-0 text-[#556d8a]" size={20} aria-hidden={true} />
                     <span>{social.name}</span>
                   </a>
                 ))}
@@ -165,7 +165,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <SocialIcon name={social.icon} size={20} aria-hidden="true" />
+                    <SocialIcon name={social.icon} size={20} aria-hidden={true} />
                   </a>
                 ))}
               </div>

@@ -20,13 +20,13 @@ export const COLORS = {
 // Rutas de navegación
 export const NAVIGATION_ITEMS = [
   { label: 'Property Management', href: '#', hasDropdown: true },
-  { label: 'For Rent', href: '#' },
-  { label: 'Residents', href: '#' },
-  { label: 'Owners', href: '#' },
-  { label: 'Testimonials', href: '#' },
-  { label: 'About Us', href: '#' },
-  { label: 'Blog', href: '#' },
-  { label: 'Contact Us', href: '#' },
+  { label: 'For Rent', href: '#', hasDropdown: false },
+  { label: 'Residents', href: '#', hasDropdown: false },
+  { label: 'Owners', href: '#', hasDropdown: false },
+  { label: 'Testimonials', href: '#', hasDropdown: false },
+  { label: 'About Us', href: '#', hasDropdown: false },
+  { label: 'Blog', href: '#', hasDropdown: false },
+  { label: 'Contact Us', href: '#', hasDropdown: false },
 ] as const
 
 // Items del dropdown de Property Management

@@ -16,7 +16,7 @@ export default function OfficesSection() {
               name="location"
               className="text-primary-blue-dark flex-shrink-0 mt-1"
               size={24}
-              aria-hidden="true"
+              aria-hidden={true}
             />
             <p className="text-primary-blue-dark">{office.address}</p>
           </div>
@@ -28,7 +28,7 @@ export default function OfficesSection() {
             name="phone"
             className="text-primary-blue-dark flex-shrink-0"
             size={24}
-            aria-hidden="true"
+            aria-hidden={true}
           />
           <a 
             href={`tel:${CONTACT_INFO.phone}`}

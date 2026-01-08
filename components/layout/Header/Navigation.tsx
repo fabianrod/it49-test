@@ -16,7 +16,7 @@ export default function Navigation() {
           >
             {item.label}
             {item.hasDropdown && (
-              <Icon name="chevron-down" className="w-4 h-4 ml-1" aria-hidden="true" />
+              <Icon name="chevron-down" className="w-4 h-4 ml-1" aria-hidden={true} />
             )}
           </a>
           {item.hasDropdown && (
